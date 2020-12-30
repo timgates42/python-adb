@@ -460,7 +460,7 @@ class AdbMessage(object):
             delim = delim.encode('utf-8')
 
         # Delimiter may be shell@hammerhead:/ $
-        # The user or directory could change, making the delimiter somthing like root@hammerhead:/data/local/tmp $
+        # The user or directory could change, making the delimiter something like root@hammerhead:/data/local/tmp $
         # Handle a partial delimiter to search on and clean up
         if delim:
             user_pos = delim.find(b'@')
